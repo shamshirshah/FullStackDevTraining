@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Show Hide</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgb(213, 213, 233);
+    }
+  </style>
+</head>
+<body>
+ <div class="container">
+  <h1 id="data">Web Application Development Training</h1>
+  
+  <!-- <button onclick="hide()">Hide</button>
+  <button onclick="show()">Show</button> -->
+
+  <button onclick="toggle()">Toggle</button>
+ </div>
+
+  <script>
+    // using with or without variable
+
+    let flag = true; // Declare flag globally
+
+function toggle() {
+    flag = !flag; // Toggle the flag
+    document.getElementById('data').style.display = flag ? 'block' : 'none';
+}
+    // function hide() {
+    //   flag = false;
+    //   document.getElementById('data').style.display = 'none';
+    // }
+    // function show() {
+    //   flag = true;
+    //   document.getElementById('data').style.display = 'block';
+    // }
+
+    //multiple ways to show and hide
+    // if(flag){
+    //   document.getElementById('data').style.display = 'block';
+    // }else{
+    //   document.getElementById('data').style.display = 'none';
+    // }
+
+    // function toggle(){
+    //   flag = !flag;
+    //   if(flag){
+    //     document.getElementById('data').style.display = 'block';
+    //   }else{
+    //     document.getElementById('data').style.display = 'none';
+    //   }
+    // }
+
+    // using ternary operator
+    // document.getElementById('data').style.display = flag ? 'block' : 'none';
+
+    // using switch
+    // switch(flag){
+    //   case true:
+    //     document.getElementById('data').style.display = 'block';
+    //     break;
+    //   case false:
+    //     document.getElementById('data').style.display = 'none';
+    //     break;
+    // }
+
+    // using if else
+    // if(flag){
+    //   document.getElementById('data').style.display = 'block';
+    // }else{
+    //   document.getElementById('data').style.display = 'none';
+    // }
+
+
+
+  </script>
+</body>
+
+</html>

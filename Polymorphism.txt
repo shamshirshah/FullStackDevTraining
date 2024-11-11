@@ -1,0 +1,21 @@
+
+Method Overriding: - The function or method which is present in parent class
+
+exactly same function or method is also present in child class.
+
+Conditon: - Inheritence
+
+Method Overloading: - If a
+class contain more than one function with the
+
+parameter then it is called method overloading;
+
+Polymorphism : -
+
+(1) Runtime Polymorphism: - The function is call is resolved
+at runtime.
+Condition: - Inheritence and Method Overriding
+
+(2) Compile Time Polymorphism: - The function call is resolved at compile time.
+Condition: - Method Overloading
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgb(213, 213, 233);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="" onsubmit="handleSubmit(event)">
+      <fieldset> 
+      <legend>Registration Form</legend><br>
+      <div>
+        <label for="name">Name</label>
+        <input  type="text" name="" id="name">
+      </div><br>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email">
+      </div><br>
+      <div>
+       
+        Comments:<br> <textarea rows="8" cols="50" name="" id=""></textarea>
+      
+      </div><br>
+      <div>
+        <label for="gender">Gender</label>
+        <select name="" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      </div><br>
+      <div>
+        <label for="programming_language">Programming language</label>
+        <select name="" id="programming_language">
+        <option value="c">C</option>
+        <option value="cpp">CPP</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+      </select>
+      </div><br>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="" id="password">
+      </div><br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      <br>
+    </fieldset>
+    </form>
+  </div>
+  <script>
+    function handleSubmit(event){
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const gender = document.getElementById("gender").value;
+      const programmingLanguage = document.getElementById("programming_language").value;
+      const password = document.getElementById("password").value;
+
+      if(name === "" || name === null){
+        alert("Name is required");
+        return;
+      } 
+      else if(email === "" || email === null){
+        alert("Email is required");
+        return;
+      } 
+      else if(gender === "" || gender === null){
+        alert("Gender is required");
+        return;
+      } 
+      else if(programmingLanguage === "" || programmingLanguage === null){
+        alert("programming language is required");
+        return;
+      } 
+      else if(password === "" || password === null){
+        alert("Password is required");
+        return;
+      } 
+        alert("Form submitted successfully");
+        console.log("name : " + name);
+        console.log("email : " + email);
+        console.log("gender : " + gender);
+        console.log("programming language : " + programmingLanguage);
+        console.log("password : " + password);
+        
+    }
+  </script>
+</body>
+</html>

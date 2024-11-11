@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Form Tutorial</title>
+
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+   
+    #myBox {
+      margin-top: 50px;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 50px;
+
+      padding-left: 60px;
+      padding-bottom: 40px;
+
+      border-width: 20px;
+      border-style: solid;
+      border-color: red;
+
+      animation-name: borderanimation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes borderanimation {
+      0% {
+        border-style: outset;
+        border-color: red;
+      }
+
+      10% {
+        border-color: green;
+        border-style: outset;
+      }
+
+      20% {
+        border-color: yellow;
+        border-style: outset;
+      }
+
+      30% {
+        border-color: orange;
+        border-style: outset;
+      }
+
+      40% {
+        border-color: pink;
+        border-style: outset;
+      }
+
+      50% {
+        border-color: blue;
+        border-style: outset;
+      }
+
+      60% {
+        border-color: purple;
+        border-style: outset;
+      }
+
+      70% {
+        border-color: black;
+        border-style: outset;
+      }
+
+      80% {
+        border-color: brown;
+        border-style: outset;
+      }
+
+      90% {
+        border-color: cyan;
+        border-style: outset;
+      }
+
+      100% {
+        border-color: red;
+        border-style: outset;
+      }
+    }
+
+    input {
+      margin: 10px;
+    }
+
+    .testbutton {
+      font-family: helvetica;
+      font-weight: bold;
+      color: #14396A !important;
+      font-size: 14px;
+      text-shadow: 2px 1px 0px #7CACDE;
+      box-shadow: 1px 1px 1px #BEE2F9;
+      padding: 10px 25px;
+      border-radius: 10px;
+      border: 2px solid #3866A3;
+      background: #63B8EE;
+      background: linear-gradient(to top, #63B8EE, #468CCF);
+    }
+
+    .testbutton:hover {
+      color: #14396A !important;
+      background: #468CCF;
+      background: linear-gradient(to top, #468CCF, #63B8EE);
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div id="myBox">
+    
+    <h1>Form Tutorial</h1>
+    <form action="">
+      <div>
+        <label for="userName">UserName</label>
+        <input type="text" id="userName">
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password">
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+
+      <div>
+        <input class="testbutton" type="submit" value="Submit">
+        <input class="testbutton" type="reset" value="Reset">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

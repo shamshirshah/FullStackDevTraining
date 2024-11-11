@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Counter Program</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgb(213, 213, 233);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="data">Counter :- 0</h1>
+    <div>
+      <button onclick="increment()">Increment</button>
+      <button onclick="decrement()">Decrement</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+  </div>
+  <script>
+    let count = 0;
+   
+    function increment(){
+      count = count + 1;
+      document.getElementById('data').innerHTML = 'Counter :- '+ count;
+      
+    }
+    function decrement(){
+      count = count - 1;
+      document.getElementById('data').innerHTML = 'Counter :- '+ count;
+      
+
+    }
+    function reset(){
+      count = 0;
+      document.getElementById('data').innerHTML = 'Counter :- '+ count;
+      
+
+    }
+  </script>
+</body>
+</html>

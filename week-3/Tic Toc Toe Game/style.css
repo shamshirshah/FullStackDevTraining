@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(213, 213, 233);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vh;
+  width: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4vmin;
+}
+
+.btn-restart, .btn-new {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: rgb(82, 205, 60);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Button hover effect */
+.btn-restart:hover, .btn-new:hover {
+  background-color: rgb(66, 170, 49);
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border: none;
+  background-color: yellowgreen;
+  border-radius: 5px;
+  font-size: 12vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s linear, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+/* Click animation effect */
+.box:active {
+  transform: scale(0.95);
+}
+
+/* Winning box highlight */
+.winning-box {
+  background-color: rgb(144, 238, 144); /* Light green */
+  color: white;
+}
+
+.msg {
+  font-size: 8vmin;
+  color: black;
+}
+
+.msg-container {
+  height: 100vmin;
+  width: 200vmin;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.6); /* Overlay effect */
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.hide {
+  display: none;
+}
